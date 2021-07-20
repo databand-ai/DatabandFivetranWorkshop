@@ -1,1 +1,1 @@
-# FivetranAstronomerWorkshop
+# Fivetran Astronomer Workshop
