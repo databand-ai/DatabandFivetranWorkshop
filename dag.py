@@ -61,19 +61,17 @@ with DAG("lab_dag",
     The FivetranSensor monitors the status of the Fivetran data sync
     """
     fivetran_sync_start = FivetranOperator(
-    task_id='fivetran-task',
-    fivetran_conn_id='fivetran_default',
-    connector_id="{{ var.value.get('connector_id') }}",
-    dag=dag
-)
+        task_id='fivetran-task',
+        fivetran_conn_id='fivetran_default',
+        connector_id="{{ var.value.get('connector_id') }}"
+    )
 
-fivetran_sync_wait = FivetranSensor(
-    task_id='fivetran-sensor',
-    fivetran_conn_id='fivetran_default',
-    connector_id="{{ var.value.get('connector_id') }}",
-    poke_interval=5,
-    dag=dag
-)
+    fivetran_sync_wait = FivetranSensor(
+        task_id='fivetran-sensor',
+        fivetran_conn_id='fivetran_default',
+        connector_id="{{ var.value.get('connector_id') }}",
+       poke_interval=5
+    )
 
 
     """
