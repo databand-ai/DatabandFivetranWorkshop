@@ -1,17 +1,11 @@
 from airflow import DAG, AirflowException
-from airflow.decorators import task
-from airflow.operators.dummy_operator import DummyOperator
-from airflow.utils.dates import datetime
 from airflow.models import Variable
-from airflow.operators.sql import SQLCheckOperator
-from airflow.utils.task_group import TaskGroup
+from airflow.operators.dummy_operator import DummyOperator
 from airflow.providers.google.cloud.sensors.bigquery import BigQueryTableExistenceSensor
 from airflow.providers.google.cloud.operators.bigquery import BigQueryValueCheckOperator
 from fivetran_provider.operators.fivetran import FivetranOperator
 from fivetran_provider.sensors.fivetran import FivetranSensor
-
-import hashlib
-import json
+from airflow.utils.dates import datetime
 
 
 TABLE='forestfires'
