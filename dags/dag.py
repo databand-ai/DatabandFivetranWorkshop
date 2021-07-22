@@ -85,7 +85,7 @@ with DAG('lab_dag',
     check_bq_row_count = BigQueryValueCheckOperator(
         task_id="check_row_count",
         sql=f"SELECT COUNT(*) FROM {DATASET}.{TABLE}",
-        pass_value=9,
+        pass_value=516,
         use_legacy_sql=False,
     )
 
