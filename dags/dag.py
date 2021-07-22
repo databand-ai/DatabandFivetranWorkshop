@@ -6,36 +6,40 @@ from airflow.models import Variable
 from airflow.operators.sql import SQLCheckOperator
 from airflow.utils.task_group import TaskGroup
 from airflow.providers.google.cloud.sensors.bigquery import BigQueryTableExistenceSensor
+from airflow.providers.google.cloud.operators.bigquery import BigQueryValueCheckOperator
 from fivetran_provider.operators.fivetran import FivetranOperator
 from fivetran_provider.sensors.fivetran import FivetranSensor
 
 import hashlib
 import json
-import logging
 
 
+TABLE='forestfires'
+DATASET='google_sheets'
 # These args will get passed on to each operator
 # You can override them on a per-task basis during operator initialization
 default_args = {
-    "owner": "astronomer",
-    "depends_on_past": False,
-    "start_date": datetime(2021, 7, 7),
-    "email": ["noreply@astronomer.io"],
-    "email_on_failure": False
+    'owner': 'astronomer',
+    'depends_on_past': False,
+    'start_date': datetime(2021, 7, 7),
+    'email': ['noreply@astronomer.io'],
+    'email_on_failure': False
 }
 
-with DAG("lab_dag",
+with DAG('lab_dag',
          default_args=default_args,
-         description="",
+         description='',
          schedule_interval=None,
          catchup=False) as dag:
     """
     ### Simple EL Pipeline with Data Integrity and Quality Checks
 
-    Before running the DAG, set the following in an Airflow or Environment Variable:
+    Before running the DAG, set the following in an Airflow or Environment Variables:
     - key: gcp_project_id
-    - value: [gcp_project_id]
-    Fully replacing [gcp_project_id] with the actual ID.
+      value: [gcp_project_id]
+    - key: connector_id
+      value: [connector_id]
+    Fully replacing [gcp_project_id] & [connector_id] with the actual IDs.
 
     What makes this a simple data quality case is:
     1. Absolute ground truth: the local CSV file is considered perfect and immutable.
@@ -51,13 +55,13 @@ with DAG("lab_dag",
     fivetran_sync_start = FivetranOperator(
         task_id='fivetran-task',
         fivetran_conn_id='fivetran_default',
-        connector_id="{{ var.value.get('connector_id') }}"
+        connector_id='{{ var.value.get("connector_id") }}'
     )
 
     fivetran_sync_wait = FivetranSensor(
         task_id='fivetran-sensor',
         fivetran_conn_id='fivetran_default',
-        connector_id="{{ var.value.get('connector_id') }}",
+        connector_id='{{ var.value.get("connector_id") }}',
         poke_interval=5
     )
 
@@ -69,10 +73,8 @@ with DAG("lab_dag",
     validate_bigquery = BigQueryTableExistenceSensor(
         task_id='validate_bigquery',
         project_id=Variable.get('gcp_project_id'),
-        dataset_id='google_sheets',
-        table_id='fivetran-nickforfivetran-3-yzb:google_sheets.forestfires',
-        bigquery_conn_id='google_cloud_default',
-        delegate_to=""
+        dataset_id=DATASET,
+        table_id='forestfires',
     )
 
     """
@@ -80,21 +82,14 @@ with DAG("lab_dag",
     Run a data quality check on a few rows, ensuring that the data in BigQuery
     matches the ground truth in the correspoding JSON file.
     """
-    with open("include/validation/forestfire_validation.json") as ffv:
-        with TaskGroup(group_id="row_quality_checks") as quality_check_group:
-            ffv_json = json.load(ffv)
-            for id, values in ffv_json.items():
-                values["id"] = id
-                values["bigquery_table"] = "forestfires"
-                SQLCheckOperator(
-                    task_id=f"forestfire_row_quality_check_{id}",
-                    conn_id="google_cloud_default",
-                    sql="sql/forestfire_row_quality_check.sql",
-                    params=values,
-                )
+    check_bq_row_count = BigQueryValueCheckOperator(
+        task_id="check_row_count",
+        sql=f"SELECT COUNT(*) FROM {DATASET}.{TABLE}",
+        pass_value=9,
+        use_legacy_sql=False,
+    )
 
-    done = DummyOperator(task_id="done")
+    done = DummyOperator(task_id='done')
 
     fivetran_sync_start >> fivetran_sync_wait >> validate_bigquery
-    validate_bigquery >> quality_check_group
-    quality_check_group >> done
+    validate_bigquery >> check_bq_row_count >> done
