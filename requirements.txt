@@ -1,1 +1,2 @@
 airflow-provider-fivetran
+apache-airflow-providers-google
