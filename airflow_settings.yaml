@@ -1,15 +1,19 @@
 airflow:
   connections:
-    - conn_id: fivetran_default
-      conn_type: Fivetran
-    - conn_id: google_cloud_default
-      conn_type: Google Cloud
+    - conn_id:
+      conn_type:
+      conn_host:
+      conn_schema:
+      conn_login:
+      conn_password:
+      conn_port:
+      conn_extra:
   pools:
     - pool_name:
       pool_slot:
       pool_description:
   variables:
     - variable_name: gcp_project_id
-      variable_value: 
+      variable_value: YOUR_PROJECT_ID
     - variable_name: connector_id
-      variable_value:
+      variable_value: YOUR_FIVETRAN_CONNECTOR
