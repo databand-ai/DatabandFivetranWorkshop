@@ -76,7 +76,7 @@ Start Astronomer with the following command as use this part of the command to f
 
 | ![astro1.png](images/astro1.png) |
 |:--:|
-| Find Astronomer at *localhost:8080*, then enter the **Username** *admin* and **Password** *admin*, then select **Sign In**|
+| Find Astronomer at *[localhost:8080](localhost:8080)*, then enter the **Username** *admin* and **Password** *admin*, then select **Sign In**|
 
 | ![astro2.png](images/astro2.png) |
 |:--:|
