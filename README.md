@@ -78,7 +78,7 @@ Note: are you seeing `buildkit not supported by deamon Error`? See [this guide](
 
 | ![astro1.png](images/astro1.png) |
 |:--:|
-| Find Astronomer at *[localhost:8080](localhost:8080)*, then enter the **Username** *admin* and **Password** *admin*, then select **Sign In**|
+| Find Astronomer at [localhost:8080](localhost:8080), then enter the **Username** *admin* and **Password** *admin*, then select **Sign In**|
 
 | ![astro2.png](images/astro2.png) |
 |:--:|
@@ -90,7 +90,7 @@ Note: are you seeing `buildkit not supported by deamon Error`? See [this guide](
 
 | ![astro3.1.png](images/astro3.1.png) |
 |:--:|
-| At *fivetran.com/account/settings*, copy the **API key** and **API secret** and paste into Astronomer |
+| At [fivetran.com/account/settings](fivetran.com/account/settings), copy the **API key** and **API secret** and paste into Astronomer |
 
 | ![astro4.png](images/astro4.png) |
 |:--:|
