@@ -4,7 +4,7 @@
 ## Table of Contents
 1. [Fivetran](#fivetran)
 2. [Astronomer](#astronomer)
-3. [Running you first DAG](#dag)
+3. [Running your first DAG](#dag)
 
 # Fivetran <a name="fivetran"></a>
 This section guides the set up of a Fivetran trial this creates a BigQuery destination to store data that is managed by Fivetran, Fivetran then automates the movement of data into this data warehouse.
@@ -61,3 +61,50 @@ Google Sheet URL
 
 Follow the guide in the link below to get started with Astronomer.
 https://www.astronomer.io/docs/cloud/stable/develop/cli-quickstart
+
+Stop before reaching **Step 3: Initialize an Airflow Project**, a project was been initalized for you
+
+Clone and cd into it with the following commands
+
+`git clone https://github.com/fivetran/FivetranAstronomerWorkshop`
+`cd FivetranAstronomerWorkshop`
+
+# Running your first DAG <a name="dag"></a>
+
+Start Astronomer with the following command as use this part of the command to finish setting it up to run your first DAG
+
+`astro dev start`
+
+| ![astro1.png](images/astro1.png) |
+|:--:|
+| Find Astronomer at *localhost:8080*, then enter the **Username** *admin* and **Password** *admin*, then select **Sign In**|
+
+| ![astro2.png](images/astro2.png) |
+|:--:|
+| Find the **Admin** section, then select **Connections** |
+
+| ![astro3.png](images/astro3.png) |
+|:--:|
+| The following information should be filled out to connect Fivetran and Astronomer, Fivetran's API Key and API Secret can be found in the next slide  |
+
+| ![astro3.1.png](images/astro3.1.png) |
+|:--:|
+| At *fivetran.com/account/settings*, copy the **API key** and **API secret** and paste into Astronomer |
+
+| ![astro4.png](images/astro4.png) |
+|:--:|
+| For the Google Cloud connection, you will receive an email with your keyfile json and instructions on how to use it |
+
+| ![astro5.png](images/astro5.png) |
+|:--:|
+| In **Admin**, find **Variables** section and edit the 2 that are created for you |
+
+https://fivetran.com/dashboard/connectors/google_sheets/google_sheets.forestfires/setup
+
+| ![astro5.1.png](images/astro5.1.png) |
+|:--:|
+| At *https://fivetran.com/dashboard/connectors/google_sheets/google_sheets.forestfires/setup*, the **Fivetran Connector ID** should be copy and pasted in Astronomer as **connector_id** |
+
+| ![astro6.png](images/astro6.png) |
+|:--:|
+| Back in Astronomer, everything is ready, select the example DAG, Unpause with the button on the left, then trigger it with the button on the right |
