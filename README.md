@@ -66,8 +66,8 @@ Stop before reaching **Step 3: Initialize an Airflow Project**, a project was be
 
 Clone and cd into it with the following commands
 
-`git clone https://github.com/fivetran/FivetranAstronomerWorkshop`
-`cd FivetranAstronomerWorkshop`
+```git clone https://github.com/fivetran/FivetranAstronomerWorkshop
+cd FivetranAstronomerWorkshop```
 
 # Running your first DAG <a name="dag"></a>
 
