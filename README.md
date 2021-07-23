@@ -74,6 +74,8 @@ Start Astronomer with the following command as use this part of the command to f
 
 `astro dev start`
 
+Note: are you seeing `buildkit not supported by deamon Error`? See [this guide](https://forum.astronomer.io/t/buildkit-not-supported-by-daemon-error-command-docker-build-t-airflow-astro-bcb837-airflow-latest-failed-failed-to-execute-cmd-exit-status-1/857).
+
 | ![astro1.png](images/astro1.png) |
 |:--:|
 | Find Astronomer at *[localhost:8080](localhost:8080)*, then enter the **Username** *admin* and **Password** *admin*, then select **Sign In**|
