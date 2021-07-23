@@ -47,7 +47,7 @@ Google Sheet URL
 
 | ![ft9.png](images/ft9.png) |
 |:--:|
-| These can be left unedited, select **CONTINUE** |
+| These can be left unedited, select **SAVE** |
 
 | ![ft10.png](images/ft10.png) |
 |:--:|
