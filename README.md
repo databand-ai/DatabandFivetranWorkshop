@@ -51,7 +51,7 @@ Google Sheet URL
 
 | ![ft10.png](images/ft10.png) |
 |:--:|
-| Copy the **Project ID** and send it to nick.acosta@fivetran.com, then select **CONTINUE** |
+| Copy the **Project ID** and send it to devrel@fivetran.com, then select **CONTINUE** |
 
 | ![ft10.png](images/ft11.png) |
 |:--:|
