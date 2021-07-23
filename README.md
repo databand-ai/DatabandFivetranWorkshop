@@ -12,7 +12,7 @@ This section guides the set up of a Fivetran trial this creates a BigQuery desti
 
 | ![ft1.png](images/ft1.png) |
 |:--:|
-| To start a Fivetran trial, the **E-mail** and **Company** entered cannot have been used for a trial previously. To achieve this, I created an email for this workshop and used it as the Company as well. Select *Sign up* |
+| [To start a Fivetran trial](fivetran.com/signup), the **E-mail** and **Company** entered cannot have been used for a trial previously. To achieve this, I created an email for this workshop and used it as the Company as well. Select *Sign up* |
 
 | ![ft2.png](images/ft2.png) |
 |:--:|
