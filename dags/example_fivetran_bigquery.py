@@ -13,10 +13,10 @@ DATASET='google_sheets'
 # These args will get passed on to each operator
 # You can override them on a per-task basis during operator initialization
 default_args = {
-    'owner': 'astronomer',
+    'owner': 'apache-airflow',
     'depends_on_past': False,
     'start_date': datetime(2021, 7, 7),
-    'email': ['noreply@astronomer.io'],
+    'email': ['noreply@apache-airflow.io'],
     'email_on_failure': False
 }
 

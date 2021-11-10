@@ -1,4 +1,4 @@
-# Fivetran <a name="fivetran"></a>
+# Fivetran
 This section guides the set up of a Fivetran trial this creates a BigQuery destination to store data that is managed by Fivetran, Fivetran then automates the movement of data into this data warehouse.
 
 
