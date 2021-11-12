@@ -1,10 +1,10 @@
 # Fivetran
-This section guides the set up of a Fivetran trial this creates a BigQuery destination to store data that is managed by Fivetran, Fivetran then automates the movement of data into this data warehouse.
+This section of the guide set up a Fivetran trial and creates a BigQuery destination to store data that is managed by Fivetran, Fivetran then automates the movement of data into this data warehouse.
 
 
 | ![ft1.png](../../images/ft1.png) |
 |:--:|
-| [To start a Fivetran trial](fivetran.com/signup), the **E-mail** and **Company** entered cannot have been used for a trial previously. To achieve this, I created an email for this workshop and used it as the Company as well. Select *Sign up* |
+| [To start a Fivetran trial](https://fivetran.com/signup), the **E-mail** and **Company** entered cannot have been used for a trial previously. To achieve this, I created an email for this workshop and used it as the Company as well. Select *Sign up* |
 
 | ![ft2.png](../../images/ft2.png) |
 |:--:|
@@ -16,7 +16,7 @@ This section guides the set up of a Fivetran trial this creates a BigQuery desti
 
 | ![ft4.png](../../images/ft4.png) |
 |:--:|
-| Fivetran will move data from Google Sheets to a data destination, select *Google Sheets* and *CONTINUE SETUP*|
+| Fivetran will move data from Google Sheets to a data destination, select *Google Sheets* and *NEXT*|
 
 | ![ft5.png](../../images/ft5.png) |
 |:--:|
