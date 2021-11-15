@@ -25,13 +25,12 @@ By the end of this guide, we will have accomplished:
 * All instructions reference the screenshot immediately preceding the instruction text.
 
 
-* Reach out to the instructor(s) with any questions regarding the steps presented in this guide.
+* Reach out to your host(s) with any questions regarding the instructions presented in this guide.
 
 ### Instructions
 | ![airflow1.png](../../images/airflow1.png) |
 |:--:|
 | Upon logging into Apache Airflow, you should see the Apache Airflow Webserver home page |
-| **PROTIP** - You can always return this page by clicking the **Apache Airflow logo** (upper left) or the **DAGs** option in the navigation menu |
 
   
 | ![airflow2.png](../../images/airflow2.png) |
@@ -91,3 +90,7 @@ By the end of this guide, we will have accomplished:
 | Select the example DAG by clicking on the `lab_dag` name |
 | Unpause the DAG by clicking the radio button in the left (see above) |
 | On the top right, click the **play** button to trigger an execution of the DAG|
+
+
+### Next Steps
+[Integrate Databand with Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/databand#integrate-databand-with-apache-airflow-)
