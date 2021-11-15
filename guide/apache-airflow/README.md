@@ -1,3 +1,8 @@
 # Apache Airflow
 
-Follow the guide in the link below to get started with Apache Airflow.
+By the end of this guide, we will have accomplished:
+* Confirm receipt of the following Airflow environment details
+  * Airflow URL
+  * Airflow Credentials
+* Access Airflow UI
+
