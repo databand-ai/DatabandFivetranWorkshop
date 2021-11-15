@@ -48,3 +48,7 @@ Google Sheet URL
 | ![ft10.png](../../images/ft11.png) |
 |:--:|
 | Finish Fivetran setup by selecting *Start Inital Sync* |
+
+
+### Next Steps
+[Accessing Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow)
