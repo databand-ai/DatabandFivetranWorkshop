@@ -1,6 +1,6 @@
 # Apache Airflow
 
-###Overview
+### Overview
 By the end of this guide, we will have accomplished:
 * Confirm receipt of the following Airflow environment details
   * Apache Airflow URL
@@ -9,7 +9,7 @@ By the end of this guide, we will have accomplished:
 * Access Apache Airflow `dags/` directory
 * Create `credentials` directory within `dags/` directory
 
-###Prerequisites
+### Prerequisites
 * Upon your enrollment in this workshop, an Apache Airflow environment was created for you 
   * For this workshop, we will be using GCP's managed Apache Airflow Service: Cloud Composer
 * Please check your registration email for an email containing the following information:
@@ -18,7 +18,7 @@ By the end of this guide, we will have accomplished:
   * Apache Airflow `dags/` directory location (**Google Cloud Storage**)
 * If you are unable to locate this email, please contact the workshop hosts for assistance
 
-###Instructions
+### Instructions
   
 | ![composer1.png](../../images/composer1.png) ![composer2.png](../../images/composer2.png) |
 |:--:|
@@ -40,15 +40,9 @@ By the end of this guide, we will have accomplished:
 
 | ![composer4.png](../../images/composer4.png) ![composer5.png](../../images/composer5.png) |
 |:--:|
-| To confirm edit rights, click **Create Folder** |
-| Name the new folder `credentials` |
+| To confirm edit rights and upload our example DAG, click **UPLOAD FILES** |
+| Select the python file that was emailed to you, example_fivetran_bigquery.py |
 | Click **Create** |
-
-
-| ![composer6.png](../../images/composer6.png) |
-| Before continuing, confirm you see both objects in your bucket: |
-| 1. `airflow_monitoring.py` file |
-| 2. `credentials` folder |
 
 
 ### Next Step
