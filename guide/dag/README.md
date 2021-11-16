@@ -53,7 +53,7 @@ By the end of this guide, we will have accomplished:
 | Return to the Connections page and select **Edit record** for the `google_cloud_default` connection |
 | Pssst... Did you make note of how to access the `credentials/` folder? If so, here's your time to shine! |
 | You will receive an email with your keyfile json, copy the .json file into the `credentials` folder on GCS |
-| In **Keyfile Path**, enter `/home/airflow/gcs/dags/credentials/<your-JSON-file>.json`, replacing **<your-JSON-file>.json** with the name of the keyfile stored in `credentials/`  |
+| In **Keyfile Path**, enter `/home/airflow/gcs/dags/credentials/{{your-JSON-file}}`, replacing **{{your-JSON-file}}** with the name of the keyfile stored in `credentials/`  |
 | In **Project Id**, enter the **gcp_project_id** provided in the email |
 | Once complete with the email's instructions, Click **Save** | 
 
