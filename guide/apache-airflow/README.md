@@ -47,7 +47,7 @@ By the end of this guide, we will have accomplished:
 
 | ![composer4.png](../../images/composer4.png) ![composer5.png](../../images/composer5.png) |
 |:--:|
-| To confirm edit rights, click **Create Folder** |
+| On **GCS Bucket detials page**, click **Create Folder** |
 | Name the new folder `credentials` |
 | Click **Create** |
 | **PROTIP** - Make note of how to access the `credentials/` directory. We will be uploading data to this directory in our next section. |

@@ -48,4 +48,42 @@ By the end of this guide, we will have accomplished:
 |:--:|
 | For **Airflow mode**, select **Google Composer (Airflow 1.x)**  |
 | In **Airflow URL**, enter the **URL** for **your Cloud Composer UI** |
+| URL Format Example: `https:///xxxxx-tp.appspot.com/` |
 | In **Syncer Name**, input `observability_workshop` |
+| Click **Save** and **Do Not Close The Following Information Screen** |
+
+| ![databand5.png](../../images/databand5.png) |
+| ![databand6.png](../../images/databand6.png) |
+|:--:|
+| In the Airflow UI, navigate to **Admin >> Connections** and add a new `HTTP` connection |
+| From the **Databand Information Screen**, copy the **Conn Id** and **Extra** information to the Airflow UI |
+| Click **Save** in Airflow and **OK** in Databand |
+
+| ![databand7.png](../../images/databand7.png) |
+|:--:|
+| Navigate to the **GCS Bucket details** page and click **UPLOAD FILES** |
+| Select the [`databand_airflow_monitor.py`](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/dags/databand_airflow_monitor.py) file located in the `/DatabandFivetranWorkshop/dags/` directory |
+| Click **Create** |
+
+| ![databand8.png](../../images/databand8.png) |
+|:--:|
+| In the **Airflow UI**, click the radio button next to `databand_airflow_monitor` to enable the DAG |
+| Once enabled, `databand_airflow_monitor` will begin running automatically. Depending on Composer available resources, this may take a few minutes |
+| After `databand_airflow_monitor` is running, trigger the `lab_dag` by clicking the **play** button on the right |
+
+| ![databand9.png](../../images/databand9.png) |
+| ![databand8.png](../../images/databand8.png) |
+|:--:|
+| In the **Databand Dashboard**, click the **Pipelines** option in the left hand navigation menu |
+| On the **Pipelines** screen, select `lab_dag` to view run history and near real-time monitoring of the current execution |
+
+
+### Next Step
+[Running your first DAG](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/dag#running-your-first-dag)
+
+
+
+
+
+
+
