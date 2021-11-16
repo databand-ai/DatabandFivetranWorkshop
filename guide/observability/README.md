@@ -1,6 +1,6 @@
 # Observability: Creating Action from Error <a name="observability"></a> 
 
-###Overview
+### Overview
 
 By the end of this guide, we will have accomplished:
 * Monitor data pipeline execution in Databand
@@ -8,7 +8,7 @@ By the end of this guide, we will have accomplished:
 * Create actionable alerts with Databand's Alert Engine
 * Configure Alert Receiver to notify stakeholders of pipeline issues
 
-###Prerequisites
+### Prerequisites
 * Completed the preceding modules:
    * [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran)
    * [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow)
@@ -76,12 +76,12 @@ By the end of this guide, we will have accomplished:
 |:--:|
 | From the **Alerts** page, you can view all Alert Definitions in created in Databand |
 | By default, the **Alerts** page shows **Triggered** Alerts |
-| But, we haven't had any failures.. (fingers crossed) |
+| But, we haven't had any failures.. `(fingers crossed)` |
 | So, Let's go create a failure! |
 
 | ![observability8.png](../../images/observability8.png) |
 |:--:|
-| In the **Airflow UI**, navigate to **Admin >> Variables |
+| In the **Airflow UI**, navigate to **Admin >> Variables** |
 | Click the **pencil icon** next to `connector_id` to edit the variable |
 | Change the **Val** of `connector_id` to **not_my_conncetor_id**. |
 | Click **Save** |

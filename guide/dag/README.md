@@ -11,7 +11,7 @@ By the end of this guide, we will have accomplished:
 * Enabling DAG in Apache Airflow UI
 * Trigger DAG run in Apache Airflow UI
 
-###Prerequisites
+### Prerequisites
 1. Create Fivetran Account and Google Sheets Sync
    * Steps found in [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran) Guide
 2. Confirm access and log into Apache Airflow UI

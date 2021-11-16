@@ -1,6 +1,6 @@
 # Databand <a name="integrate-databand-with-apache-airflow"></a> 
 
-###Overview
+### Overview
 
 By the end of this guide, we will have accomplished:
 * Accessing your Databand environment
@@ -9,7 +9,7 @@ By the end of this guide, we will have accomplished:
 * Deploy `databand_monitor_dag` to GCS
 * Enable Databand monitoring in Apache Airflow
 
-###Prerequisites
+### Prerequisites
 1. Completed the preceding modules:
    * [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran)
    * [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow)
