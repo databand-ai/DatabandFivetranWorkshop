@@ -43,15 +43,18 @@ By the end of this guide, we will have accomplished:
 |:--:|
 | Set **Conn Id** as `fivetran_default` |
 | Next to **Conn Type**, click the black arrow to open the drop-down menu and select `HTTP` |
-| Access your [Fivetran Account Settings](https://www.fivetran.com/account/settings) and scroll down until you see the **API Config** section |
+| Access your [Fivetran Account Settings](https://fivetran.com/account/settings) and scroll down until you see the **API Config** section |
 | In the Apache Airflow UI, set **Login** as your Fivetran **API key** and set **Password** as your Fivetran **API secret** |
 | In the Apache Airflow UI, click **Save** |
 
 
 | ![airflow6.png](../../images/airflow6.png) |
 |:--:|
-| Return to the Connections page and select the `google_cloud_default` connection |
-| You will receive an email with your keyfile json and instructions on how to use it |
+| Return to the Connections page and select **Edit record** for the `google_cloud_default` connection |
+| Pssst... Did you make note of how to access the `credentials/` folder? If so, here's your time to shine! |
+| You will receive an email with your keyfile json, copy the .json file into the `credentials` folder on GCS |
+| In **Keyfile Path**, enter `/home/airflow/gcs/dags/credentials/<your-JSON-file>.json`, replacing **<your-JSON-file>.json** with the name of the keyfile stored in `credentials/`  |
+| In **Project Id**, enter the **gcp_project_id** provided in the email |
 | Once complete with the email's instructions, Click **Save** | 
 
 
