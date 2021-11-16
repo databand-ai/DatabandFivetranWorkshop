@@ -52,8 +52,7 @@ By the end of this guide, we will have accomplished:
 | In **Syncer Name**, input `observability_workshop` |
 | Click **Save** and **Do Not Close The Following Information Screen** |
 
-| ![databand5.png](../../images/databand5.png) |
-| ![databand6.png](../../images/databand6.png) |
+| ![databand5.png](../../images/databand5.png) ![databand6.png](../../images/databand6.png) |
 |:--:|
 | In the Airflow UI, navigate to **Admin >> Connections** and add a new `HTTP` connection |
 | From the **Databand Information Screen**, copy the **Conn Id** and **Extra** information to the Airflow UI |
@@ -71,8 +70,7 @@ By the end of this guide, we will have accomplished:
 | Once enabled, `databand_airflow_monitor` will begin running automatically. Depending on Composer available resources, this may take a few minutes |
 | After `databand_airflow_monitor` is running, trigger the `lab_dag` by clicking the **play** button on the right |
 
-| ![databand9.png](../../images/databand9.png) |
-| ![databand8.png](../../images/databand8.png) |
+| ![databand9.png](../../images/databand9.png) ![databand8.png](../../images/databand8.png) |
 |:--:|
 | In the **Databand Dashboard**, click the **Pipelines** option in the left hand navigation menu |
 | On the **Pipelines** screen, select `lab_dag` to view run history and near real-time monitoring of the current execution |
