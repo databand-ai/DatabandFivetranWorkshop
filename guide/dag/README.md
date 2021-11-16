@@ -47,15 +47,15 @@ By the end of this guide, we will have accomplished:
 |:--:|
 | Set **Conn Id** as `fivetran_default` |
 | Next to **Conn Type**, click the black arrow to open the drop-down menu and select `HTTP` |
-| Access your [Fivetran Account Settings](fivetran.com/account/settings) and scroll down until you see the **API Config** section |
+| Access your [Fivetran Account Settings](https://fivetran.com/account/settings) and scroll down until you see the **API Config** section |
 | In the Apache Airflow UI, set **Login** as your Fivetran **API key** and set **Password** as your Fivetran **API secret** |
 | In the Apache Airflow UI, click **Save** |
 
 
 | ![airflow6.png](../../images/airflow6.png) |
 |:--:|
-| Return to the Connections page and select the `google_cloud_default` connection |
-| You will receive an email with your keyfile json and instructions on how to use it |
+| Return to the Connections page and select **Edit record** for the `google_cloud_default` connection |
+| You will receive an email with your keyfile json, copy it into **Keyfile JSON** and enter the project-id  |
 | Once complete with the email's instructions, Click **Save** | 
 
 
