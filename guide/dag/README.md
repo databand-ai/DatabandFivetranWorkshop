@@ -71,7 +71,7 @@ By the end of this guide, we will have accomplished:
 | ![airflow9.png](../../images/airflow9.png) ![airflow10.png](../../images/airflow10.png) |
 |:--:|
 | Name the Variable `connector_id` Variable |
-| Copy the **connector_id** value found in your [Fivetran Connector Details](https://fivetran.com/dashboard/connectors/google_sheets/google_sheets.forestfires/setup) |
+| Copy the **connector_id** value found in your [Fivetran Connector Details](https://www.fivetran.com/dashboard/connectors/google_sheets/google_sheets.forestfires/setup) |
 | Click **Save** |
 
   
