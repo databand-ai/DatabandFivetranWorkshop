@@ -76,13 +76,3 @@ By the end of this guide, we will have accomplished:
 | On the **Pipelines** screen, click on the **Name** `lab_dag` |
 | The next screen shows `lab_dag`'s run history, including near, real-time monitoring of the current execution |
 
-
-### Next Step
-[Running your first DAG](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/dag#running-your-first-dag)
-
-
-
-
-
-
-
