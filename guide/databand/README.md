@@ -70,10 +70,11 @@ By the end of this guide, we will have accomplished:
 | Once enabled, `databand_airflow_monitor` will begin running automatically. Depending on Composer available resources, this may take a few minutes |
 | After `databand_airflow_monitor` is running, trigger the `lab_dag` by clicking the **play** button on the right |
 
-| ![databand9.png](../../images/databand9.png) ![databand8.png](../../images/databand8.png) |
+| ![databand9.png](../../images/databand9.png) ![databand10.png](../../images/databand10.png) ![databand11.png](../../images/databand11.png) |
 |:--:|
 | In the **Databand Dashboard**, click the **Pipelines** option in the left hand navigation menu |
-| On the **Pipelines** screen, select `lab_dag` to view run history and near real-time monitoring of the current execution |
+| On the **Pipelines** screen, click on the **Name** `lab_dag` |
+| The next screen shows `lab_dag`'s run history, including near, real-time monitoring of the current execution |
 
 
 ### Next Step
