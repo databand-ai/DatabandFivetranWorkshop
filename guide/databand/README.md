@@ -7,9 +7,7 @@ By the end of this guide, we will have accomplished:
 * Creating an Airflow Syncer in the Databand UI
 * Create and configure the `dbnd_config` connection in Airflow UI
 * Deploy `databand_monitor_dag` to GCS
-* Enable Databand monitor DAG
-* Trigger execution of `lab_dag` from Airflow UI
-* Observe `lab_dag` execution metadata in Databand UI
+* Enable Databand monitoring in Apache Airflow
 
 ###Prerequisites
 1. Completed the preceding modules:
@@ -66,13 +64,9 @@ By the end of this guide, we will have accomplished:
 
 | ![databand8.png](../../images/databand8.png) |
 |:--:|
-| In the **Airflow UI**, click the radio button next to `databand_airflow_monitor` to enable the DAG |
+| In the **Airflow UI**, click the radio button next to `databand_airflow_monitor` to enable the DAG (1) |
 | Once enabled, `databand_airflow_monitor` will begin running automatically. Depending on Composer available resources, this may take a few minutes |
-| After `databand_airflow_monitor` is running, trigger the `lab_dag` by clicking the **play** button on the right |
 
-| ![databand9.png](../../images/databand9.png) ![databand10.png](../../images/databand10.png) ![databand11.png](../../images/databand11.png) |
-|:--:|
-| In the **Databand Dashboard**, click the **Pipelines** option in the left hand navigation menu |
-| On the **Pipelines** screen, click on the **Name** `lab_dag` |
-| The next screen shows `lab_dag`'s run history, including near, real-time monitoring of the current execution |
+### Next Steps
+[Observability: Creating Action from Error](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/observability#observability-)
 

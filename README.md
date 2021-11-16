@@ -6,6 +6,7 @@
 3. [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow)
 4. [Running your first DAG](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/dag#running-your-first-dag)
 5. [Integrate Databand with Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/databand#integrate-databand-with-apache-airflow-)
+6. [Observability: Creating Action from Error](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/observability#observability-)
 
 ### Getting Started <a name="getting-started"></a>
 This is a companion repository for the Achieving Data Observability in Apache Airflow, 
