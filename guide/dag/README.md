@@ -13,18 +13,14 @@ By the end of this guide, we will have accomplished:
 
 ###Prerequisites
 1. Create Fivetran Account and Google Sheets Sync
-   1. Steps found in [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran) Guide
+   * Steps found in [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran) Guide
 2. Confirm access and log into Apache Airflow UI
-   1. For this workshop, each participant is provided with an Apache Airflow environment using GCP's Cloud Composer service
-   2. Steps for accessing your Cloud Composer env are found in [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow) Guide
+   * For this workshop, each participant is provided with an Apache Airflow environment using GCP's Cloud Composer service
+   * Steps for accessing your Cloud Composer env are found in [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow) Guide
 
 ### Tips for Success
 * For best results, complete the following steps in the order they are presented.
-
-
 * All instructions reference the screenshot immediately preceding the instruction text.
-
-
 * Reach out to your host(s) with any questions regarding the instructions presented in this guide.
 
 ### Instructions
@@ -55,7 +51,10 @@ By the end of this guide, we will have accomplished:
 | ![airflow6.png](../../images/airflow6.png) |
 |:--:|
 | Return to the Connections page and select **Edit record** for the `google_cloud_default` connection |
-| You will receive an email with your keyfile json, copy it into **Keyfile JSON** and enter the project-id  |
+| Pssst... Did you make note of how to access the `credentials/` folder? If so, here's your time to shine! |
+| You will receive an email with your keyfile json, copy the .json file into the `credentials` folder on GCS |
+| In **Keyfile Path**, enter `/home/airflow/gcs/dags/credentials/<your-JSON-file>.json`, replacing **<your-JSON-file>.json** with the name of the keyfile stored in `credentials/`  |
+| In **Project Id**, enter the **gcp_project_id** provided in the email |
 | Once complete with the email's instructions, Click **Save** | 
 
 

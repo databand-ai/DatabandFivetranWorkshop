@@ -38,11 +38,26 @@ By the end of this guide, we will have accomplished:
 | With proper access, you should see a GCS bucket with a single object - Cloud Composer's airflow_monitoring.py file |
 
 
-| ![composer4.png](../../images/composer_4.png) |
+| ![composer6.png](../../images/composer6.png) |
 |:--:|
-| To confirm edit rights and upload our example DAG, click **UPLOAD FILES** |
-| Select the python file that was emailed to you, example_fivetran_bigquery.py |
+| To upload your first DAG, click **UPLOAD FILES** |
+| Select the [`example_fivetran_bigquery.py`](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/dags/example_fivetran_bigquery.py) file located in the `/DatabandFivetranWorkshop/dags/` directory |
 | Click **Create** |
+
+
+| ![composer4.png](../../images/composer4.png) ![composer5.png](../../images/composer5.png) |
+|:--:|
+| To confirm edit rights, click **Create Folder** |
+| Name the new folder `credentials` |
+| Click **Create** |
+| **PROTIP** - Make note of how to access the `credentials/` directory. We will be uploading data to this directory in our next section. |
+
+
+| ![composer7.png](../../images/composer7.png) |
+| Before continuing, confirm you see three objects in your bucket: |
+| 1. `airflow_monitoring.py` file |
+| 2. `credentials/` folder |
+| 3. `example_fivetran_bigquery.py` file |
 
 
 ### Next Step
