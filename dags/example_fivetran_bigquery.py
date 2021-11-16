@@ -68,13 +68,13 @@ with DAG('lab_dag',
         task_id='validate_bigquery',
         project_id=Variable.get('gcp_project_id'),
         dataset_id=DATASET,
-        table_id='forestfires',
+        table_id=TABLE,
     )
 
     """
     #### Row-level data quality check
     Run a data quality check on a few rows, ensuring that the data in BigQuery
-    matches the ground truth in the correspoding JSON file.
+    matches the ground truth in the corresponding JSON file.
     """
     check_bq_row_count = BigQueryValueCheckOperator(
         task_id="check_row_count",

@@ -10,13 +10,18 @@ By the end of this guide, we will have accomplished:
 * Create `credentials` directory within `dags/` directory
 
 ###Prerequisites
-* Upon your enrollment in this workshop, an Apache Airflow environment was created for you 
-  * For this workshop, we will be using GCP's managed Apache Airflow Service: Cloud Composer
-* Please check your registration email for an email containing the following information:
-  * Apache Airflow Credentials (**Google Account**)
-  * Apache Airflow URL (**Cloud Composer**)
-  * Apache Airflow `dags/` directory location (**Google Cloud Storage**)
-* If you are unable to locate this email, please contact the workshop hosts for assistance
+1. Upon your enrollment in this workshop, an Apache Airflow environment was created for you 
+   * For this workshop, we will be using GCP's managed Apache Airflow Service: Cloud Composer
+2. Please check your registration email for an email containing the following information:
+    * Apache Airflow Credentials (**Google Account**)
+    * Apache Airflow URL (**Cloud Composer**)
+    * Apache Airflow `dags/` directory location (**Google Cloud Storage**)
+    * If you are unable to locate this email, please contact the workshop host(s) for assistance.
+
+### Tips for Success
+* For best results, complete the following steps in the order they are presented.
+* All instructions reference the screenshot immediately preceding the instruction text.
+* Reach out to your host(s) with any questions regarding the instructions presented in this guide.
 
 ###Instructions
   

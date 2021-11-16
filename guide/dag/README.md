@@ -13,18 +13,14 @@ By the end of this guide, we will have accomplished:
 
 ###Prerequisites
 1. Create Fivetran Account and Google Sheets Sync
-   1. Steps found in [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran) Guide
+   * Steps found in [Fivetran](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/fivetran#fivetran) Guide
 2. Confirm access and log into Apache Airflow UI
-   1. For this workshop, each participant is provided with an Apache Airflow environment using GCP's Cloud Composer service
-   2. Steps for accessing your Cloud Composer env are found in [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow) Guide
+   * For this workshop, each participant is provided with an Apache Airflow environment using GCP's Cloud Composer service
+   * Steps for accessing your Cloud Composer env are found in [Apache Airflow](https://github.com/databand-ai/DatabandFivetranWorkshop/tree/master/guide/apache-airflow#apache-airflow) Guide
 
 ### Tips for Success
 * For best results, complete the following steps in the order they are presented.
-
-
 * All instructions reference the screenshot immediately preceding the instruction text.
-
-
 * Reach out to your host(s) with any questions regarding the instructions presented in this guide.
 
 ### Instructions
@@ -47,7 +43,7 @@ By the end of this guide, we will have accomplished:
 |:--:|
 | Set **Conn Id** as `fivetran_default` |
 | Next to **Conn Type**, click the black arrow to open the drop-down menu and select `HTTP` |
-| Access your [Fivetran Account Settings](fivetran.com/account/settings) and scroll down until you see the **API Config** section |
+| Access your [Fivetran Account Settings](https://www.fivetran.com/account/settings) and scroll down until you see the **API Config** section |
 | In the Apache Airflow UI, set **Login** as your Fivetran **API key** and set **Password** as your Fivetran **API secret** |
 | In the Apache Airflow UI, click **Save** |
 
@@ -72,7 +68,7 @@ By the end of this guide, we will have accomplished:
 | ![airflow9.png](../../images/airflow9.png) ![airflow10.png](../../images/airflow10.png) |
 |:--:|
 | Name the Variable `connector_id` Variable |
-| Copy the **connector_id** value found in your [Fivetran Connector Details](https://fivetran.com/dashboard/connectors/google_sheets/google_sheets.forestfires/setup) |
+| Copy the **connector_id** value found in your [Fivetran Connector Details](https://www.fivetran.com/dashboard/connectors/google_sheets/google_sheets.forestfires/setup) |
 | Click **Save** |
 
   
