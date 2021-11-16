@@ -38,7 +38,7 @@ By the end of this guide, we will have accomplished:
 | With proper access, you should see a GCS bucket with a single object - Cloud Composer's airflow_monitoring.py file |
 
 
-| ![composer4.png](../../images/composer4.png) ![composer5.png](../../images/composer5.png) |
+| ![composer4.png](../../images/composer_4.png) |
 |:--:|
 | To confirm edit rights and upload our example DAG, click **UPLOAD FILES** |
 | Select the python file that was emailed to you, example_fivetran_bigquery.py |
