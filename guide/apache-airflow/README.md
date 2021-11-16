@@ -54,6 +54,7 @@ By the end of this guide, we will have accomplished:
 
 
 | ![composer7.png](../../images/composer7.png) |
+|:--:|
 | Before continuing, confirm you see three objects in your bucket: |
 | 1. `airflow_monitoring.py` file |
 | 2. `credentials/` folder |
